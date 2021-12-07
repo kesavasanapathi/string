@@ -1,0 +1,319 @@
+"""
+# vowel
+str=input("enter the string")
+for i in range ( len(str)):
+    if str[i]=="a" or str[i]=="e" or str[i]=='i' or str[i]=="o" or str[i]=="u":
+        print(str[i],end=" ")"""
+"""
+# constants
+str =input("enter the string")
+for i in range (len(str)):
+    if str[i]=="a" or str[i]=="e" or str[i]=='i' or str[i]=="o" or str[i]=="u":
+        continue
+    else:
+        print(str[i])"""
+"""#count vowel
+str=input("enter the string")
+count=0
+print(str[k])
+        count+=1
+print(count)"""
+"""
+#reverse the string
+str=input("enter the string")
+k=len(str)
+i=0
+while k>i:
+    if(k==0):
+        break
+    print(str[k-1],end=" ")
+    k=k-1"""
+"""
+#count the constonts
+str=input("enter the string")
+count=0
+for i in range (len(str)):
+    if str[i]=="a" or str[i]=="e" or str[i]=='i' or str[i]=="o" or str[i]=="u":
+        continue
+    else:
+        count+=1
+print(count)"""
+"""
+#count the number of words in a string
+str =input("enter the string")
+k=str.split( )
+count=0
+for i in k:
+    count+=1
+print(count)"""
+"""
+#count the spaces in string
+str=input("enter the string")
+k=len(str)
+count=0
+for i in range (k):
+    if str[i]==" ":
+        count+=1
+print(count)"""
+"""
+#check the given string is palindrome
+str=input("enter the string")
+temp=str
+kes=" "
+k=len(str)
+while k>0:
+    kes=kes+str[k-1]
+    k=k-1
+str.strip()
+kes.strip()
+print(kes)
+print(str)
+if(str in kes):
+    print("palindrome")
+else:
+    print("not palindrome")
+       or
+str=input("enter the string")
+j=len(str)-1
+count=0
+for i in range(len(str)):
+    if str[i]==str[j]:
+               count+=1
+    j-=1
+if count==len(str):
+               print("palindrame")
+else:
+    print("not palindrame")"""
+"""#count the repated character
+str=input("enter the string")
+arr=[0]*256
+for i in range (len(str)):
+    num=ord(str[i])
+    arr[num]+=1
+    num=0
+for i in range (256):
+    if arr[i]>0:
+        print(chr(i),"occurs",arr[i])"""
+"""#cocentate the two string
+str0=input("enter the string")
+str1=input("enter the string")
+print(str0+ " "+str1)"""
+"""#print the  first capital letter in a string 
+str=input("enter the string")
+for i in range (len(str)):
+    if ord(str[i])>=65 and ord(str[i])<=91:
+        print(str[i])
+        break
+    else:
+        continue"""
+"""#print first small letter in  a string
+str=input("enter the string")
+for i in range (len(str)):
+    if ord(str[i])>=97 and ord(str[i])<=123:
+        print(str[i])
+        break"""
+"""#print the ascii value of a numbers
+str=input("enter the string")
+for i in range (len(str)):
+    if ord(str[i])>=65 and ord(str[i])<=91:
+        print(chr(ord(str[i])),"ascivalue",ord(str[i]))
+    if ord(str[i])>=97 and ord(str[i])<=123:
+        print(chr(ord(str[i])) ,"asci value",ord(str[i]))"""
+"""#print the two string are anagram
+s=input("enter the string")
+k=input("ente the new string")
+if len(s)!=len(k):
+    print("not a anagram")
+if sorted(s)==sorted(k):
+    print("anagram")"""
+"""#check the two string are same are not
+st=input("enter the string")
+st1=input("enter the second string")
+count=0
+if(len(st)==len(st1)):
+    for i in range(len(st)):
+        if st[i]==st1[i]:
+            count+=1
+if len(st)==count:
+    print("two string are equal")
+else:
+    print("two string are not same")"""
+"""#remove all upper case character in a string
+st1=input("enter the string")
+temp=" "
+for i in range (len(st1)):
+    if chr(ord(st1[i]))>=chr(65) and chr(ord(st1[i]))<=chr(91):
+        continue
+    else:
+        temp=temp+st1[i]
+print(temp)"""
+"""#remove all upper case character in a string
+st1=input("enter the string")
+temp=" "
+for i in range (len(st1)):
+    if chr(ord(st1[i]))>=chr(97) and chr(ord(st1[i]))<=chr(123):
+        continue
+    else:
+        temp=temp+st1[i]
+print(temp)"""
+"""#write a program to merge two string into a single string by taking alternative character
+str0=input("enter first string")
+str1=input("enter the second string")
+i=0
+j=0
+out=" "
+while i<len(str0) or j<len(str1):
+    if i<len(str0):
+       out=out+str0[i]
+       i+=1
+    if j<len(str1):
+       out=out+str1[j]
+       j=j+1
+print(out)"""
+"""#input=a4b3c2
+#output=aaaabbbcc
+str0=input("enter the string")
+out=" "
+for x in str0:
+    if x.isalpha():
+        out=out+x
+        prev=x
+    else:
+       out=out+prev*(int(x)-1)
+print(out)"""
+"""write a program to sort the character of a string
+followin bu numeric value
+s=input("enter the string")
+out =s1 =s2=" "
+for i in  s:
+    if i.isalpha():
+        s1=s1+i
+    else:
+        s2=s2+i
+for x in (sorted(s1)):
+    out=out+x
+for x in (sorted(s2)):
+    out=out+x
+print(out)"""
+
+"""write a program to remove the duplicate character from the string
+s=input("enter the string")
+l=[]
+for i in s:
+    if i not in l:
+        l.append(i)
+out="-".join(l)
+print(out)"""
+"""#program to reverse the internal content of a string
+s=input("enter the string")
+l1=[]
+k=s.split()
+i=0
+print(len(k))
+#for i in len(k):
+while i<len(k):
+    l1.append(k[i][::-1])
+    i+=1
+out="".join(l1)
+print(out)"""
+"""#write a program to merge the  three string alternative
+s=input("enter the string")
+k=input("enter the string")
+e=input("enter the string")
+i=j=t=0
+out=" "
+while i<len(s) or j<len(k) or t<len(e):
+    if i<len(s):
+        out=out+s[i]
+        i=i+1
+    if j<len(k):
+        out=out+k[j]
+        j=j+1
+    if t<len(e):
+        out=out+e[t]
+        t=t+1
+print(out)"""
+"""
+#input=a4k3b2
+#output=aeknbd
+s=input("enter the string")
+out=" "
+for i in s:
+    if i.isalpha():
+        out=out+i
+        ch=i
+    else:
+        d=int(i)
+        new=(chr(ord(ch)+d))
+        out=out+new
+print(out)"""
+
+
+
+        
+    
+    
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+        
+
+               
+        
+            
+               
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+
+
+    
